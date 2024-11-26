@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation Soirée Marocaine</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f4ee;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 15px solid #c49102;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        .header {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            color: #c49102;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        label {
+            display: block;
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 10px;
+            border: 2px solid #c49102;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #c49102;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+        }
+        button:hover {
+            background-color: #007b7f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Réservation Soirée Marocaine</div>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="reservation-name">Nom pour la réservation :</label>
+                <input type="text" id="reservation-name" name="reservation-name" required>
+            </div>
+            <div class="form-group">
+                <label for="reservation-phone">Numéro de téléphone :</label>
+                <input type="tel" id="reservation-phone" name="reservation-phone" required>
+            </div>
+            <div class="form-group">
+                <label for="adults">Nombre de personnes (sans enfants -10 ans) :</label>
+                <select id="adults" name="adults">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="children">Nombre d'enfants (-10 ans) :</label>
+                <select id="children" name="children">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="plat">Plat :</label>
+                <select id="plat" name="plat">
+                    <option value="tagine-poulet">Tagine de Poulet au Citron Confit</option>
+                    <option value="tagine-viande">Tagine de Viande Hachée</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dessert">Dessert :</label>
+                <select id="dessert" name="dessert">
+                    <option value="patisseries">Pâtisseries Marocaines</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="boisson">Boisson :</label>
+                <select id="boisson" name="boisson">
+                    <option value="coca">Coca</option>
+                    <option value="hawai">Hawai</option>
+                    <option value="sprite">Sprite</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="confirmation">Confirmer la présence :</label>
+                <input type="checkbox" id="confirmation" name="confirmation" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Envoyer ma réservation</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -59,65 +59,43 @@
 <body>
     <div class="container">
         <div class="header">Réservation Soirée Marocaine</div>
-        <form action="#" method="POST">
-            <div class="form-group">
-                <label for="reservation-name">Nom pour la réservation :</label>
-                <input type="text" id="reservation-name" name="reservation-name" required>
-            </div>
-            <div class="form-group">
-                <label for="reservation-phone">Numéro de téléphone :</label>
-                <input type="tel" id="reservation-phone" name="reservation-phone" required>
-            </div>
-            <div class="form-group">
-                <label for="adults">Nombre de personnes (sans enfants -10 ans) :</label>
-                <select id="adults" name="adults">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="children">Nombre d'enfants (-10 ans) :</label>
-                <select id="children" name="children">
-                    <option value="0">0</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="plat">Plat :</label>
-                <select id="plat" name="plat">
-                    <option value="tagine-poulet">Tagine de Poulet au Citron Confit</option>
-                    <option value="tagine-viande">Tagine de Viande Hachée</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="dessert">Dessert :</label>
-                <select id="dessert" name="dessert">
-                    <option value="patisseries">Pâtisseries Marocaines</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="boisson">Boisson :</label>
-                <select id="boisson" name="boisson">
-                    <option value="coca">Coca</option>
-                    <option value="hawai">Hawai</option>
-                    <option value="sprite">Sprite</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="confirmation">Confirmer la présence :</label>
-                <input type="checkbox" id="confirmation" name="confirmation" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">Envoyer ma réservation</button>
-            </div>
-        </form>
+       <form action="https://script.google.com/macros/s/AKfycbxbHrxiAw5rwf-vsbtpyq4aiLfpw6wOvZKHcslGExas7xpAeBcqHjglPnDMdmsyXknVFQ/exec" method="POST">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Téléphone :</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="adults">Nombre de personnes :</label>
+    <input type="number" id="adults" name="adults" required>
+
+    <label for="children">Nombre d'enfants (-10 ans) :</label>
+    <input type="number" id="children" name="children" required>
+
+    <label for="plat">Choix du plat :</label>
+    <select id="plat" name="plat">
+        <option value="tagine-poulet">Tagine Poulet</option>
+        <option value="tagine-viande">Tagine Viande</option>
+    </select>
+
+    <label for="dessert">Choix du dessert :</label>
+    <select id="dessert" name="dessert">
+        <option value="patisseries">Pâtisseries Marocaines</option>
+    </select>
+
+    <label for="boisson">Choix de la boisson :</label>
+    <select id="boisson" name="boisson">
+        <option value="coca">Coca</option>
+        <option value="hawai">Hawai</option>
+        <option value="sprite">Sprite</option>
+    </select>
+
+    <label for="confirmation">Confirmer :</label>
+    <input type="checkbox" id="confirmation" name="confirmation">
+
+    <button type="submit">Envoyer</button>
+</form>
+
     </div>
 </body>
 </html>
